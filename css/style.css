@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
@@ -12,6 +9,7 @@
   color: #fff;
   scrollbar-width: auto;
   scrollbar-color: #000000 #ffffff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -33,11 +31,7 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.navbar_block {
+.navbar__block {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,43 +46,42 @@ a {
   border-bottom: 1px solid rgba(153, 153, 153, 0.2);
   -webkit-box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
           box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
-  padding: 5px 100px;
+  padding: 10px 100px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-.navbar_block .logo {
+.navbar__block .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Supermercado One', cursive;
 }
 
-.navbar_block .logo img {
+.navbar__block .logo img {
   width: 70px;
   height: 50px;
 }
 
-.navbar_block .logo h1 {
+.navbar__block .logo h1 {
   font-size: 22px;
   margin-top: 5px;
   color: #fff;
 }
 
-.navbar_block .logo h1 .buy {
+.navbar__block .logo h1 .buy {
   color: #f00;
 }
 
-.navbar_block .logo h1 .sell {
+.navbar__block .logo h1 .sell {
   color: #0f0;
 }
 
-.navbar_block .menu_list {
+.navbar__block .menu_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +93,7 @@ a {
           justify-content: space-between;
 }
 
-.navbar_block .menu_list .menu_list-item {
+.navbar__block .menu_list .menu_list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +104,7 @@ a {
   margin-right: 25px;
 }
 
-.navbar_block .menu_list .menu_list-item a {
+.navbar__block .menu_list .menu_list-item a {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -119,11 +112,11 @@ a {
   transition: 0.4s;
 }
 
-.navbar_block .menu_list .menu_list-item a:hover {
+.navbar__block .menu_list .menu_list-item a:hover {
   color: #0ff;
 }
 
-.navbar_block .menu_list .menu_list-item_register {
+.navbar__block .menu_list .menu_list-item_register {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,22 +131,89 @@ a {
   transition: 0.3s;
 }
 
-.navbar_block .menu_list .menu_list-item_register b {
+.navbar__block .menu_list .menu_list-item_register b {
   font-size: 18px;
   font-weight: 600;
   color: #000;
   margin-left: 5px;
 }
 
-.navbar_block .menu_list .menu_list-item_register i {
+.navbar__block .menu_list .menu_list-item_register i {
   font-size: 20px;
   font-weight: 600;
   color: #000;
 }
 
-.navbar_block .menu_list .menu_list-item_register:hover {
+.navbar__block .menu_list .menu_list-item_register:hover {
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
           box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.hearder__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 130px 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.hearder__block b {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #0ff;
+}
+
+.hearder__block h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.hearder__block p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hearder__block span {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hearder__block span h5 {
+  font-size: 18px;
+  color: #f00;
+  margin-right: 15px;
+}
+
+.hearder__block span i {
+  font-size: 30px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 15px;
+  cursor: pointer;
 }
 
 .canvas_block {
