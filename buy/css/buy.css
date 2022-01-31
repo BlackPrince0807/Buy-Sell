@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +9,7 @@
   color: #fff;
   scrollbar-width: auto;
   scrollbar-color: #000000 #ffffff;
+  font-family: 'Dongle', sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -30,11 +28,7 @@
 
 body {
   background-color: #000;
-  overflow-x: hidden;
-}
-
-a {
-  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
 .navbar_block {
@@ -52,7 +46,7 @@ a {
   border-bottom: 1px solid rgba(153, 153, 153, 0.2);
   -webkit-box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
           box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
-  padding: 5px 100px;
+  padding: 5px 50px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -66,7 +60,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Supermercado One', cursive;
 }
 
 .navbar_block .logo img {
@@ -75,8 +68,8 @@ a {
 }
 
 .navbar_block .logo h1 {
-  font-size: 22px;
-  margin-top: 5px;
+  font-size: 35px;
+  margin-top: 15px;
   color: #fff;
 }
 
@@ -88,7 +81,58 @@ a {
   color: #0f0;
 }
 
+.navbar_block .search_input {
+  width: 40%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar_block .search_input input {
+  width: 100%;
+  padding: 0 35px;
+  font-size: 25px;
+  outline: none;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.navbar_block .search_input input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 25px;
+}
+
+.navbar_block .search_input input:-ms-input-placeholder {
+  color: #999;
+  font-size: 25px;
+}
+
+.navbar_block .search_input input::-ms-input-placeholder {
+  color: #999;
+  font-size: 25px;
+}
+
+.navbar_block .search_input input::placeholder {
+  color: #999;
+  font-size: 25px;
+}
+
+.navbar_block .search_input i {
+  position: absolute;
+  left: 10px;
+  font-size: 18px;
+  color: #fff;
+  top: 10px;
+}
+
 .navbar_block .menu_list {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,65 +144,14 @@ a {
           justify-content: space-between;
 }
 
-.navbar_block .menu_list .menu_list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 .navbar_block .menu_list .menu_list-item a {
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.navbar_block .menu_list .menu_list-item a:hover {
-  color: #0ff;
-}
-
-.navbar_block .menu_list .menu_list-item_register {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 25px;
-  background-color: #0ff;
-  padding: 5px 15px;
-  border-radius: 6px;
+  font-size: 25px;
+  color: #999;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.navbar_block .menu_list .menu_list-item_register b {
-  font-size: 18px;
-  font-weight: 600;
-  color: #000;
-  margin-left: 5px;
+.navbar_block .menu_list .menu_list-item a:hover {
+  color: #fff;
 }
-
-.navbar_block .menu_list .menu_list-item_register i {
-  font-size: 20px;
-  font-weight: 600;
-  color: #000;
-}
-
-.navbar_block .menu_list .menu_list-item_register:hover {
-  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-}
-
-.canvas_block {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=buy.css.map */
