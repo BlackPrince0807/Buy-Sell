@@ -27,7 +27,7 @@
 
 body {
     background-color: #000;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar_block {
@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.342);
+    background-color: rgba(0, 0, 0, 0.863);
     border-bottom: 1px solid rgba(153, 153, 153, 0.2);
     box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
     padding: 5px 50px;

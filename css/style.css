@@ -28,7 +28,7 @@
 
 body {
   background-color: #000;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .navbar_block {
@@ -42,7 +42,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgba(0, 0, 0, 0.863);
   border-bottom: 1px solid rgba(153, 153, 153, 0.2);
   -webkit-box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
           box-shadow: 3px 0 5px rgba(255, 255, 255, 0.062);
