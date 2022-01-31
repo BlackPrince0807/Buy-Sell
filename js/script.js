@@ -11,7 +11,7 @@ let particleArray = [];
 const mouse = {
     x: null,
     y: null,
-    radius: 150
+    radius: 130
 }
 window.addEventListener('mousemove', function(event) {
     mouse.x = event.x;
@@ -28,10 +28,10 @@ class Particle {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.size = 1;
+        this.size = 1.5;
         this.baseX = this.x;
         this.baseY = this.y;
-        this.density = (Math.random() * 30) + 5;
+        this.density = (Math.random() * 40) + 2;
     }
     draw() {
         ctx.fillStyle = 'white';
@@ -68,7 +68,7 @@ class Particle {
 
 function init() {
     particleArray = [];
-    for (let i = 0; i < 800; i++) {
+    for (let i = 0; i < 1200; i++) {
         let x = Math.random() * canvas.width;
         let y = Math.random() * canvas.height;
         particleArray.push(new Particle(x, y));
@@ -84,6 +84,27 @@ function animate() {
         particleArray[i].draw();
         particleArray[i].update();
     }
+    connect();
     requestAnimationFrame(animate);
 }
 animate();
+
+function connect() {
+    let opacityValue = 1;
+    for (let a = 0; a < particleArray.length; a++) {
+        for (let b = a; b < particleArray.length; b++) {
+            let dx = particleArray[a].x - particleArray[b].x;
+            let dy = particleArray[a].y - particleArray[b].y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < 45) {
+                opacityValue = 0.2;
+                ctx.strokeStyle = 'rgba(255,255,255,' + opacityValue + ')';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(particleArray[a].x, particleArray[a].y);
+                ctx.lineTo(particleArray[b].x, particleArray[b].y);
+                ctx.stroke();
+            }
+        }
+    }
+}
