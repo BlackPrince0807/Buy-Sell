@@ -14,42 +14,58 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar__block">
-        <a href="./index.html" class="logo">
-            <img src="./image/logo_img.png" alt="logo">
-            <h1><span class="buy">Buy</span> & <span class="sell">Sell</span></h1>
-        </a>
-        <ul class="menu_list">
-            <li class="menu_list-item">
-                <a href="#!">Buy Something</a>
-            </li>
-            <li class="menu_list-item">
-                <a href="#!">Sell Something</a>
-            </li>
-            <li class="menu_list-item">
-                <a href="#!">About</a>
-            </li>
-            <a href="#!" class="menu_list-item_register">
-                <i class='bx bx-log-in'></i>
-                <b>Register</b>
+    <div class="container__block">
+        <!-- navbar -->
+        <nav class="navbar__block">
+            <a href="./index.html" class="logo">
+                <img src="./image/logo_img.png" alt="logo">
+                <h1><span class="buy">Buy</span> & <span class="sell">Sell</span></h1>
             </a>
-        </ul>
-    </nav>
+            <ul class="menu_list">
+                <li class="menu_list-item">
+                    <a href="#!">Buy Something</a>
+                </li>
+                <li class="menu_list-item">
+                    <a href="#!">Sell Something</a>
+                </li>
+                <li class="menu_list-item">
+                    <a href="#!">About</a>
+                </li>
+                <a href="#!" class="menu_list-item_register">
+                    <i class='bx bx-log-in'></i>
+                    <b>Register</b>
+                </a>
+            </ul>
+        </nav>
 
-    <!-- header center -->
-    <header class="hearder__block">
-        <b>Welcome to Buy & Sell</b>
-        <h2>Minima ipsum dolor sit amet adipisicing elit. Distinctio hic velit quisquam sit cum aperiam harum ullam quas?</h2>
-        <p>Consectetur adipisicing elit nam commodi quas quidem voluptates fugiat ducimus, quasi officiis ex obcaecati iste aliquid suscipit sed optio, molestiae quae, adipisci repellendus. Assumenda ad pariatur debitis.</p>
-        <span>
-            <h5>Watch video</h5>
-            <i class='bx bxs-right-arrow bx-tada'></i>
-        </span>
-    </header>
+        <!-- header center -->
+        <header class="hearder__block">
+            <b>Welcome to Buy & Sell</b>
+            <h2>Minima ipsum dolor sit amet adipisicing elit. Distinctio hic velit quisquam sit cum aperiam harum ullam quas?</h2>
+            <p>Consectetur adipisicing elit nam commodi quas quidem voluptates fugiat ducimus, quasi officiis ex obcaecati iste aliquid suscipit sed optio, molestiae quae, adipisci repellendus. Assumenda ad pariatur debitis.</p>
+            <span>
+                <h5>Watch video</h5>
+                <i class='bx bxs-right-arrow bx-tada'></i>
+            </span>
+        </header>
 
-    <!-- canvas -->
-    <canvas id="canvas1" class="canvas_block"></canvas>
+        <div class="register__modal_block">
+            <i class='bx bx-x'></i>
+            <img src="./image/register_userimg.png" alt="register_userimg">
+            <b>Register</b>
+            <div class="register_btns">
+                <button class="signup_btn">
+                    <span>Sign up</span>
+                </button>
+                <button class="signin_btn">
+                    <span>Sign in</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- canvas -->
+        <canvas id="canvas1" class="canvas_block"></canvas>
+    </div>
 
 
 
